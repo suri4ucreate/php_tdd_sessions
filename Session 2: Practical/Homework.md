@@ -63,7 +63,7 @@ Your table is `products` you want to fetch only 6 results from products table sk
 
 Your table is `products` and you want to fetch all the columns of products along with the total number of products.
 
-```$this->assertEquals('select *, count("id") from products', $sql->select('products', ['count','id']))```
+```$this->assertEquals('select count("id") from products', $sql->select('products', ['count','id']))```
 
 9. **Generate a select query to get the product with maximum cost**
 
